@@ -1,0 +1,12 @@
+{
+    "nausea": ["paracetamol", "amoxicillin", "metformin"],
+    "liver issues": ["paracetamol"],
+    "rash": ["paracetamol", "amoxicillin"],
+    "stomach pain": ["ibuprofen", "metformin"],
+    "heartburn": ["ibuprofen"],
+    "dizziness": ["ibuprofen", "lisinopril"],
+    "vomiting": ["amoxicillin"],
+    "diarrhea": ["amoxicillin", "metformin"],
+    "dry cough": ["lisinopril"],
+    "headache": ["lisinopril"]
+}

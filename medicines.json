@@ -1,0 +1,27 @@
+{
+    "paracetamol": {
+        "salt": "acetaminophen",
+        "interactions": ["ibuprofen", "warfarin", "alcohol"],
+        "side_effects": ["nausea", "liver issues", "rash"]
+    },
+    "ibuprofen": {
+        "salt": "ibuprofen",
+        "interactions": ["paracetamol", "aspirin", "lisinopril"],
+        "side_effects": ["stomach pain", "heartburn", "dizziness"]
+    },
+    "amoxicillin": {
+        "salt": "amoxicillin",
+        "interactions": ["methotrexate", "warfarin"],
+        "side_effects": ["nausea", "vomiting", "diarrhea", "rash"]
+    },
+    "lisinopril": {
+        "salt": "lisinopril",
+        "interactions": ["ibuprofen", "potassium supplements"],
+        "side_effects": ["dry cough", "dizziness", "headache"]
+    },
+    "metformin": {
+        "salt": "metformin",
+        "interactions": ["cimetidine", "insulin"],
+        "side_effects": ["nausea", "stomach pain", "diarrhea"]
+    }
+}

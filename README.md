@@ -1,18 +1,35 @@
-# medsafe-ai
-MedSafe AI is an intelligent, AI-powered healthcare assistance platform designed to enhance medicine safety awareness, symptom understanding, and early risk identification through a unified web-based system. Built using Streamlit, Optical Character Recognition (OCR), fuzzy matching algorithms, curated medical databases, and large language models (LLMs), the platform assists users in safely navigating medication usage and basic health concerns in an educational, non-diagnostic manner.
-MedSafe AI streamlines multiple healthcare safety workflows by enabling users to check potential drug–drug interactions, extract medicines and active salts from prescription images, receive symptom-based guidance, log post-medication experiences, and assess emergency risk levels. By combining OCR-based prescription analysis, intelligent medicine name matching, rule-based risk scoring, and AI-generated explanations, the system delivers structured, transparent, and user-friendly safety insights.
-Through the integration of computer vision, natural language processing, fuzzy logic, and generative AI, MedSafe AI provides a reliable environment for medicine awareness, preventive health education, and early warning support. The platform is particularly valuable for patients, caregivers, and health-tech researchers seeking accessible tools for medication safety monitoring, symptom clarification, and risk-aware decision support without replacing professional medical consultation.
+# MedSafe AI
 
+## Description
+MedSafe AI is an intelligent medicine safety and prescription analysis platform built with Streamlit. It assists users in understanding medicines, prescriptions, symptoms, side effects, and potential emergency risks through AI-powered explanations and rule-based safety logic.
 
-Scenario 1: Medication Safety, Interaction Awareness, and Prescription Understanding
+**Disclaimer**: MedSafe AI provides educational health information and does not replace professional medical advice.
 
-Patients and caregivers often face challenges such as unclear prescriptions, unfamiliar medicine names, and a lack of awareness about potential drug–drug interactions. Misinterpretation of handwritten prescriptions or combining medicines without proper knowledge can lead to avoidable health risks. MedSafe AI addresses this challenge by providing an intelligent, end-to-end environment where users can input medicine names or upload prescription images and receive clear, structured safety insights in an educational and non-diagnostic manner.
-For example, a patient prescribed multiple medicines by different doctors can use MedSafe AI’s Medicine Interaction Checker to enter all medications at once. The system applies fuzzy matching to accurately identify medicines from its curated database and checks for known interaction warnings. Any detected interaction is presented clearly, along with a conciseAI-generated safety note that summarizes the risk in simple language. This eliminates guesswork and reduces reliance on incomplete internet searches or subjective assumptions.
-In cases where prescriptions are difficult to read, users can upload an image of the prescription. MedSafe AI leverages OCR and generative AI to extract medicine names along with their active drugs or salts in a structured JSON format. This allows users to better understand what they are taking and cross-check safety information. By combining OCR, fuzzy logic, and AI-based summarization within an interactive Streamlit interface, MedSafe AI improves medication literacy, enhances patient confidence, and promotes safer medicine usage without replacing professional medical advice.
+## Features
+- **Medicine Interaction Checker:** Detect known drug interactions using fuzzy matching.
+- **Prescription OCR Analyzer:** Extract text from uploaded prescription images using Tesseract OCR.
+- **Symptom & Doubt Solver:** Analyze symptoms with rule-based systems to provide advice and emergency warnings.
+- **Side Effect Monitor:** Compare experienced symptoms with known side effects of medicines.
+- **Emergency Risk Predictor:** Calculate health risk scores based on user inputs.
 
+## Prerequisites
+- Python 3.10+
+- [Tesseract-OCR](https://github.com/tesseract-ocr/tesseract) installed on your system.
+- [Ollama](https://ollama.com/) running locally with the `llama3` model pulled (`ollama run llama3`).
 
-Scenario 2: Symptom Guidance, Side-Effect Monitoring, and Early Risk Awareness 
+## Installation
+1. Clone this repository or download the source code.
+2. Navigate to the project directory:
+   ```bash
+   cd MedSafeAI
+   ```
+3. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Individuals experiencing new symptoms or unexpected side effects after taking medicines often struggle to determine whether their experience is normal, requires monitoring, or needs urgent attention. Accessing reliable, understandable health information without jumping to conclusions or self-diagnosis remains a significant challenge. MedSafe AI addresses this gap by offering a structured symptom guidance system, a side-effect monitoring module, and an emergency risk predictor—focused on education, awareness, and early warning support. 
-
-For instance, a user experiencing discomfort after taking a prescribed medicine can log their age, gender, medicines taken, dosage, and post-medication experience in the Side-Effect Monitor. MedSafe AI analyzes this information and generates a short, educational response highlighting possible contributing factors and one clear precaution to watch for. The tone remains informative and non-diagnostic, helping users make sense of their experience without inducing panic or false certainty. 
+## Usage
+Run the Streamlit application:
+```bash
+streamlit run app.py
+```

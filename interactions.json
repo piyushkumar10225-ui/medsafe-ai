@@ -1,0 +1,22 @@
+{
+    "paracetamol_ibuprofen": {
+        "severity": "moderate",
+        "description": "May increase stomach irritation and potential kidney strain if used excessively."
+    },
+    "paracetamol_warfarin": {
+        "severity": "high",
+        "description": "Prolonged use of paracetamol may enhance the anticoagulant effect of warfarin, increasing bleeding risk."
+    },
+    "ibuprofen_aspirin": {
+        "severity": "high",
+        "description": "Simultaneous use can increase the risk of gastrointestinal bleeding and reduce aspirin's cardioprotective effects."
+    },
+    "ibuprofen_lisinopril": {
+        "severity": "moderate",
+        "description": "Ibuprofen can reduce the blood pressure-lowering effects of lisinopril and impact kidney function."
+    },
+    "amoxicillin_methotrexate": {
+        "severity": "high",
+        "description": "Amoxicillin can decrease the clearance of methotrexate, potentially leading to methotrexate toxicity."
+    }
+}
